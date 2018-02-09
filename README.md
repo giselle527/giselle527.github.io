@@ -1,8 +1,8 @@
 
 # Nice to Meet You~~
 
-## Show My Works
+Show My Works
 
-### jnshu branch
+## jnshu folder
 
-Finish tasks from jnshu.
+Tasks from jnshu.
