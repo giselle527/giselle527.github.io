@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-<div class="well">
-    {% if page.subtitle %}
-    <h4 class="home-subtitle">{{ page.subtitle }}</h4>
-    {% endif %}
-    <div>
-    	{{ content }}
-    </div>
+
+<div class="box">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <hr/>
+    <div class="content"><span class="post-text">{{ content }}</span></div>
 </div>
