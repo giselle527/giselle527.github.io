@@ -212,12 +212,12 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-social:
+# social:
   # LinkLabel: Link
-  GitHub: https://github.com/giselle527
-  知乎: https://www.zhihu.com/people/shou-zi-giselle
-  豆瓣: https://www.douban.com/people/44614997
-  微博: https://weibo.com/giselle527
+  # GitHub: https://github.com/giselle527
+  # 知乎: https://www.zhihu.com/people/shou-zi-giselle
+  # 豆瓣: https://www.douban.com/people/44614997
+  # 微博: https://weibo.com/giselle527
 
 
 # Social Links Icons

@@ -4,7 +4,7 @@ title:
   tag: 标签
   schedule: 日程表
   archives: 时间线
-  categories: 目录
+  categories: 分类
   tags: 标签
   about: 关于
 
@@ -13,7 +13,7 @@ author: 博主
 menu:
   home: 主页
   archives: 时间线
-  categories: 目录
+  categories: 分类
   tags: 标签
   about: 关于我
   search: 搜索
@@ -22,8 +22,8 @@ menu:
   commonweal: 公益404
 
 sidebar:
-  overview: 站点概览
-  toc: 文章目录
+  overview: 部落小览
+  toc: 本文目录
 
 post:
   created: 创建于
@@ -59,7 +59,7 @@ counter:
     other: "目前共计 %d 个标签"
 
   categories:
-    zero: 暂无目录
+    zero: 暂无分类
     one: 目前共计 1 个分类
     other: "目前共计 %d 个分类"
 
@@ -72,7 +72,7 @@ state:
   posts: 日志
   pages: 页面
   tags: 标签
-  categories: 目录
+  categories: 分类
 
 search:
   placeholder: 搜索...
