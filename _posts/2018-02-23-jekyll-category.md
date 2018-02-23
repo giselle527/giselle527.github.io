@@ -3,7 +3,7 @@ layout: post
 title: "jekyll文章分类"
 description: jekll blog文章分类和查询分类的方法。
 category: jekyll
-tags: [文章分类, category]
+tags: [文章分类, category, blog]
 ---
 
 ## 文章分类
