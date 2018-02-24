@@ -1,0 +1,126 @@
+
+/* css reset */
+ul, h1{
+	margin:0;
+	padding:0;
+	
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+// 定义变量
+
+
+@width: 640px;
+@height: 1136px;
+
+// 不带参数的混和样式
+
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+
+.wrap{
+	width: @width;
+	color: #fff;
+}
+
+header{
+	font-family: "Microsoft YaHei";
+	height: (18/1136)*@height;
+	line-height: (18/1136)*@height;
+	padding:(11/1136)*@height (12/640)*@width;
+	background: #331409;
+
+	ul, span, img{
+		display:inline-block;
+	}
+
+	.dot_list li{
+		width: (11/640)*@width;
+		height: (18/1136)*@height;
+		margin-right:  (3/640)*@width;
+		float:left;
+
+		// 带参数的混和
+
+		.background(@pic:1){
+			background: url('../images/task3_dot_0@{pic}.png') no-repeat center;
+		}
+
+		&:nth-child(1),&:nth-child(2),&:nth-child(3){
+			.background();
+		}
+
+		&:nth-child(4),&:nth-child(5){
+			.background(2);
+		}	
+
+	}
+
+	.head_signal{
+		margin:0 5px;
+	}
+
+	.head_time{
+		font-weight: bold;
+		margin-left: (23/640)*@width;
+	}
+
+	.battery{
+		float: right;
+
+		li{
+			display:inline-block;
+		}
+
+		img{
+			vertical-align: top;
+		}
+
+		.bat_image{
+
+		}
+	}
+}
+
+
+
+nav{
+	height: (88/1136)*@height;
+	line-height:  (88/1136)*@height;
+	padding: 0 (18/640)*@width;
+	text-align: center;
+	font-family: "黑体";
+	background: #22292c;
+
+	a:nth-of-type(1){
+		float:left;
+	}
+
+	a:nth-of-type(2){
+		float:right;
+	}
+
+	.title{
+		display: inline-block;
+		font-size: 34px;
+
+	}
+}
+
+section{
+	height: (1008/1136)*@height;
+}
+

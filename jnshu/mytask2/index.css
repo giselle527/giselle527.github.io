@@ -1,0 +1,80 @@
+/* css reset */
+ul,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap {
+  width: 640px;
+  color: #fff;
+}
+header {
+  font-family: "Microsoft YaHei";
+  height: 18px;
+  line-height: 18px;
+  padding: 11px 12px;
+  background: #331409;
+}
+header ul,
+header span,
+header img {
+  display: inline-block;
+}
+header .dot_list li {
+  width: 11px;
+  height: 18px;
+  margin-right: 3px;
+  float: left;
+}
+header .dot_list li:nth-child(1),
+header .dot_list li:nth-child(2),
+header .dot_list li:nth-child(3) {
+  background: url('../images/task3_dot_01.png') no-repeat center;
+}
+header .dot_list li:nth-child(4),
+header .dot_list li:nth-child(5) {
+  background: url('../images/task3_dot_02.png') no-repeat center;
+}
+header .head_signal {
+  margin: 0 5px;
+}
+header .head_time {
+  font-weight: bold;
+  margin-left: 23px;
+}
+header .battery {
+  float: right;
+}
+header .battery li {
+  display: inline-block;
+}
+header .battery img {
+  vertical-align: top;
+}
+nav {
+  height: 88px;
+  line-height: 88px;
+  padding: 0 18px;
+  text-align: center;
+  background: #22292c;
+}
+nav a:nth-of-type(1) {
+  float: left;
+}
+nav a:nth-of-type(2) {
+  float: right;
+}
+section {
+  height: 1008px;
+}
