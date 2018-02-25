@@ -716,6 +716,6 @@ version: 5.1.1
 repository: giselle527/giselle527.github.io
 
 # 开启打赏功能
-reward_comment: 
-wechatpay: /uploads/wechatpay.jpg
-alipay: /uploads/alipay.jpg
+# reward_comment: 
+# wechatpay: /uploads/wechatpay.jpg
+# alipay: /uploads/alipay.jpg
