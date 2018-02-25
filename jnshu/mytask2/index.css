@@ -1,11 +1,17 @@
 /* css reset */
 ul,
-h1 {
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
 ul {
   list-style: none;
+}
+h1,
+h2 {
+  font-weight: normal;
 }
 a {
   text-decoration: none;
@@ -15,12 +21,17 @@ a {
   display: block;
   clear: both;
 }
+html {
+  font-size: 10px;
+}
 .wrap {
-  width: 640px;
+  width: 47%;
   color: #fff;
+  margin: 0 auto;
 }
 header {
   font-family: "Microsoft YaHei";
+  font-size: 2rem;
   height: 18px;
   line-height: 18px;
   padding: 11px 12px;
@@ -51,7 +62,8 @@ header .head_signal {
 }
 header .head_time {
   font-weight: bold;
-  margin-left: 23px;
+  font-size: 2.4rem;
+  margin-left: 48px;
 }
 header .battery {
   float: right;
@@ -67,14 +79,68 @@ nav {
   line-height: 88px;
   padding: 0 18px;
   text-align: center;
+  font-family: "Adobe Heiti Std R";
+  color: #f8f6f5;
   background: #22292c;
 }
 nav a:nth-of-type(1) {
   float: left;
+  background: url(../images/task3_arrow_06.png) no-repeat left center;
+  padding-left: 33px;
 }
 nav a:nth-of-type(2) {
   float: right;
+  width: 37px;
+  height: 88px;
+  background: url(../images/task3_dot_05.png) no-repeat left center;
 }
-section {
+nav a {
+  font-size: 2.6rem;
+}
+nav .title {
+  display: inline-block;
+  font-size: 3.4rem;
+}
+.content {
   height: 1008px;
+  background-color: #68cdd5;
+  text-align: center;
+}
+.content .backward {
+  display: block;
+  width: 54px;
+  height: 54px;
+  background: url(../images/task3_arrow_07.png) no-repeat 35px 20px;
+  padding: 20px 0 40px 35px;
+}
+.content .logo {
+  display: inline-block;
+  width: 181px;
+  height: 70px;
+}
+.content .cont_text {
+  font-size: 3rem;
+  font-family: 'Hiragino Sans GB';
+  line-height: 5.4rem;
+  padding: 100px 92px;
+  text-align: left;
+}
+.content .intro div {
+  width: 50%;
+  text-align: center;
+}
+.content .intro div img {
+  vertical-align: bottom;
+}
+.content .intro div span {
+  display: block;
+  font-size: 2.4rem;
+  font-family: "Adobe Heiti Std R";
+  line-height: 5.4rem;
+}
+.content .intro div:nth-child(1) {
+  float: left;
+}
+.content .intro div:nth-child(2) {
+  float: right;
 }

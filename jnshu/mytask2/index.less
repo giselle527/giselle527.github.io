@@ -1,6 +1,6 @@
 
 /* css reset */
-ul, h1{
+ul, h1, h2, p{
 	margin:0;
 	padding:0;
 	
@@ -8,6 +8,10 @@ ul, h1{
 
 ul{
 	list-style:none;
+}
+
+h1, h2{
+	font-weight: normal;
 }
 
 a{
@@ -18,9 +22,12 @@ a{
 
 // 定义变量
 
+@fontsize: 10;
+// @width: 640px;
+@width: 47%;
+// @height: 1136px;
+@height: 98%;
 
-@width: 640px;
-@height: 1136px;
 
 // 不带参数的混和样式
 
@@ -31,16 +38,22 @@ a{
 }
 
 
+html{
+	font-size: @fontsize*1px;
+}
+
 .wrap{
 	width: @width;
 	color: #fff;
+	margin: 0 auto;
 }
 
 header{
 	font-family: "Microsoft YaHei";
-	height: (18/1136)*@height;
-	line-height: (18/1136)*@height;
-	padding:(11/1136)*@height (12/640)*@width;
+	font-size: 20/@fontsize*1rem;
+	height: 18px;
+	line-height: 18px;
+	padding: 11px 12px;
 	background: #331409;
 
 	ul, span, img{
@@ -48,9 +61,9 @@ header{
 	}
 
 	.dot_list li{
-		width: (11/640)*@width;
-		height: (18/1136)*@height;
-		margin-right:  (3/640)*@width;
+		width: 11px;
+		height: 18px;
+		margin-right: 3px;
 		float:left;
 
 		// 带参数的混和
@@ -75,7 +88,8 @@ header{
 
 	.head_time{
 		font-weight: bold;
-		margin-left: (23/640)*@width;
+		font-size: 24/@fontsize*1rem;
+		margin-left: 48px;
 	}
 
 	.battery{
@@ -89,38 +103,99 @@ header{
 			vertical-align: top;
 		}
 
-		.bat_image{
-
-		}
 	}
 }
 
 
 
 nav{
-	height: (88/1136)*@height;
-	line-height:  (88/1136)*@height;
-	padding: 0 (18/640)*@width;
+	height: 88px;
+	line-height: 88px;
+	padding: 0 18px;
 	text-align: center;
-	font-family: "黑体";
+	font-family: "Adobe Heiti Std R";
+	color: #f8f6f5;
 	background: #22292c;
 
 	a:nth-of-type(1){
 		float:left;
+		background: url(../images/task3_arrow_06.png) no-repeat left center;
+		padding-left: 33px;
 	}
 
 	a:nth-of-type(2){
 		float:right;
+		width: 37px;
+		height: 88px;
+		background: url(../images/task3_dot_05.png) no-repeat left center;
+	}
+
+	a{
+		font-size: 26/@fontsize*1rem;
 	}
 
 	.title{
 		display: inline-block;
-		font-size: 34px;
+		font-size: 34/@fontsize*1rem;
 
 	}
 }
 
-section{
-	height: (1008/1136)*@height;
+.content{
+	height: 1008px;
+	background-color: #68cdd5;
+	text-align: center;
+
+	.backward{
+		display: block;
+		width: 54px;
+		height: 54px;
+		background: url(../images/task3_arrow_07.png) no-repeat 35px 20px;
+		padding: 20px 0 40px 35px;
+
+	}
+
+	.logo{
+		display: inline-block;
+		width: 181px;
+		height: 70px;
+	}
+
+	.cont_text{
+		font-size: 30/@fontsize*1rem;
+		font-family: 'Hiragino Sans GB';
+		line-height: 54/@fontsize*1rem;
+		padding: 100px 92px;
+		text-align: left;
+	}
+
+	.intro{
+
+		div{
+			width: 50%;
+			text-align: center;
+
+			img{
+				vertical-align: bottom;
+			}
+
+			span{
+				display: block;
+				font-size: 24/@fontsize*1rem;
+				font-family: "Adobe Heiti Std R";
+				line-height: 54/@fontsize*1rem;
+			}
+
+			&:nth-child(1){
+				float:left;
+			}
+			
+			&:nth-child(2){
+				float:right;
+			}
+
+		}
+
+	}
 }
 
