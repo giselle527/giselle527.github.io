@@ -387,16 +387,12 @@ han: false
 
 # Disqus
 disqus:
-  # enable: false
-  enable: true
-  # shortname: 
-  shortname: giselle
+  enable: false
+  shortname:
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
   hide: false
-  # count本来是没有的，我加的
-  count: true
 
 # Hypercomments
 #hypercomments_id:
@@ -417,6 +413,7 @@ changyan:
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 #livere_uid: your uid
+livere_uid: drinkjch@163.com
 
 # Baidu Share
 # Available value:
@@ -567,6 +564,7 @@ local_search:
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
   # show top n results per article, show all results by setting to -1
+  # top_n_per_article: 1
   top_n_per_article: 2
 
 # External URL with BASE64 encrypt & decrypt

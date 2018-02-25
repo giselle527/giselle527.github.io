@@ -3,7 +3,7 @@ title:
   category: 分类
   tag: 标签
   schedule: 日程表
-  archives: 时间线
+  archives: 时间轴
   categories: 分类
   tags: 标签
   about: 关于
@@ -12,7 +12,7 @@ author: 博主
 
 menu:
   home: 主页
-  archives: 时间线
+  archives: 时间轴
   categories: 分类
   tags: 标签
   about: 关于我
