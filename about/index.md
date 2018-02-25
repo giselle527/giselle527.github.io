@@ -1,9 +1,8 @@
 ---
 layout: page
 type: about
+title: 慢慢
 ---
-
-# 慢慢
 
 ## 慢慢，不愿放弃
 
