@@ -1,6 +1,6 @@
 
 /* css reset */
-ul, h1, h2, p{
+body, ul, li, h1, h2, p{
 	margin:0;
 	padding:0;
 	
@@ -22,12 +22,55 @@ a{
 
 // 定义变量
 
-@fontsize: 10;
-// @width: 640px;
-@width: 47%;
-// @height: 1136px;
-@height: 98%;
+@fontsize: 26;
+@uiwidth: 640;
+@scale: @fontsize/@uiwidth;
 
+// 媒体查询
+
+html { 
+    font-size: round( @scale*270px );
+}
+@media (min-width:320px){
+  html{
+    font-size: round( @scale*320px );
+  }
+}
+@media (min-width:360px){
+  html{
+    font-size: round( @scale*360px );
+  }
+}
+@media (min-width:412px){
+  html{
+    font-size: round( @scale*412px );
+  }
+}
+@media (min-width:480px){
+  html{
+    font-size: round( @scale*480px );
+  }
+}
+@media (min-width:640px){
+  html{
+    font-size: round( @scale*640px );
+  }
+}
+@media (min-width:720px){
+  html{
+    font-size: round( @scale*720px );
+  }
+}
+@media (min-width:768px){
+  html{
+    font-size: round( @scale*768px );
+  }
+}
+@media (min-width:1349px){
+  html{
+    font-size: round( @scale*1349px );
+  }
+}
 
 // 不带参数的混和样式
 
@@ -37,13 +80,19 @@ a{
 	clear:both;
 }
 
+.img{
+    width: auto\9;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+};
 
-html{
-	font-size: @fontsize*1px;
-}
+// 设置样式
 
 .wrap{
-	width: @width;
+	width: 100%;
+	// width: floor(640/@fontsize)*1rem;
 	color: #fff;
 	margin: 0 auto;
 }
@@ -51,9 +100,9 @@ html{
 header{
 	font-family: "Microsoft YaHei";
 	font-size: 20/@fontsize*1rem;
-	height: 18px;
-	line-height: 18px;
-	padding: 11px 12px;
+	height: 18/@fontsize*1rem;
+	line-height: 18/@fontsize*1rem;
+	padding: 11/@fontsize*1rem 12/@fontsize*1rem;
 	background: #331409;
 
 	ul, span, img{
@@ -61,15 +110,35 @@ header{
 	}
 
 	.dot_list li{
-		width: 11px;
-		height: 18px;
-		margin-right: 3px;
+		width: 10/@fontsize*1rem;
+		height: 10/@fontsize*1rem;
+		margin-right: 3/@fontsize*1rem;
+		border-radius: 50%;
 		float:left;
 
 		// 带参数的混和
+		// 
+		// // 方法一：用border和背景颜色构成小圆圈
 
-		.background(@pic:1){
+		// .background( @color: #fff, @border: transparent ){
+		// 	background-color: @color;
+		// 	border: 1px solid @border;
+		// }
+
+		// &:nth-child(1),&:nth-child(2),&:nth-child(3){
+		// 	.background();
+		// }
+
+		// &:nth-child(4),&:nth-child(5){
+		// 	.background( transparent, #fff );
+		// }
+		
+		// // 	方法二：用背景图构成小圆圈
+		// // 	
+		.background( @pic:1 ){
 			background: url('../images/task3_dot_0@{pic}.png') no-repeat center;
+			background-size: 100% 100%;
+
 		}
 
 		&:nth-child(1),&:nth-child(2),&:nth-child(3){
@@ -77,19 +146,24 @@ header{
 		}
 
 		&:nth-child(4),&:nth-child(5){
-			.background(2);
-		}	
+			.background( 2 );
+		}
 
 	}
 
-	.head_signal{
-		margin:0 5px;
+	.signal_box{
+		width: 25/@fontsize*1rem;
+		height: 18/@fontsize*1rem;
+		margin: 0 3/@fontsize*1rem;
+		.head_signal{
+			.img;
+		}
 	}
 
 	.head_time{
 		font-weight: bold;
 		font-size: 24/@fontsize*1rem;
-		margin-left: 48px;
+		margin-left: 48/@fontsize*1rem;
 	}
 
 	.battery{
@@ -99,8 +173,14 @@ header{
 			display:inline-block;
 		}
 
+		.bat_image{
+			width: 50/@fontsize*1rem;
+			height: 18/@fontsize*1rem;
+		}
+
 		img{
 			vertical-align: top;
+			.img;
 		}
 
 	}
@@ -109,9 +189,9 @@ header{
 
 
 nav{
-	height: 88px;
-	line-height: 88px;
-	padding: 0 18px;
+	height: 88/@fontsize*1rem;
+	line-height: 88/@fontsize*1rem;
+	padding: 0 18/@fontsize*1rem;
 	text-align: center;
 	font-family: "Adobe Heiti Std R";
 	color: #f8f6f5;
@@ -120,14 +200,16 @@ nav{
 	a:nth-of-type(1){
 		float:left;
 		background: url(../images/task3_arrow_06.png) no-repeat left center;
-		padding-left: 33px;
+		background-size: 23% 40%;
+		padding-left: 33/@fontsize*1rem;
 	}
 
 	a:nth-of-type(2){
 		float:right;
-		width: 37px;
-		height: 88px;
+		width: 37/@fontsize*1rem;
+		height: 88/@fontsize*1rem;
 		background: url(../images/task3_dot_05.png) no-repeat left center;
+		background-size: 100% 10%;
 	}
 
 	a{
@@ -142,30 +224,31 @@ nav{
 }
 
 .content{
-	height: 1008px;
+	height: 1008/@fontsize*1rem;
 	background-color: #68cdd5;
 	text-align: center;
 
 	.backward{
 		display: block;
-		width: 54px;
-		height: 54px;
-		background: url(../images/task3_arrow_07.png) no-repeat 35px 20px;
-		padding: 20px 0 40px 35px;
+		width: 54/@fontsize*1rem;
+		height: 54/@fontsize*1rem;
+		background: url(../images/task3_arrow_07.png) no-repeat 35/@fontsize*1rem 20/@fontsize*1rem;
+		background-size: 60% 47%;
+		padding: 20/@fontsize*1rem 0 40/@fontsize*1rem 35/@fontsize*1rem;
 
 	}
 
 	.logo{
 		display: inline-block;
-		width: 181px;
-		height: 70px;
+		width: 181/@fontsize*1rem;
+		height: 70/@fontsize*1rem;
 	}
 
 	.cont_text{
 		font-size: 30/@fontsize*1rem;
 		font-family: 'Hiragino Sans GB';
 		line-height: 54/@fontsize*1rem;
-		padding: 100px 92px;
+		padding: 100/@fontsize*1rem 92/@fontsize*1rem;
 		text-align: left;
 	}
 
@@ -177,6 +260,8 @@ nav{
 
 			img{
 				vertical-align: bottom;
+				width: 84/@fontsize*1rem;
+				height: 84/@fontsize*1rem;
 			}
 
 			span{

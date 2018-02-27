@@ -1,5 +1,7 @@
 /* css reset */
+body,
 ul,
+li,
 h1,
 h2,
 p {
@@ -16,25 +18,72 @@ h2 {
 a {
   text-decoration: none;
 }
+html {
+  font-size: 11px;
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 412px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 26px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 29px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 31px;
+  }
+}
+@media (min-width: 1349px) {
+  html {
+    font-size: 55px;
+  }
+}
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
 }
-html {
-  font-size: 10px;
+.img {
+  width: auto\9;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 .wrap {
-  width: 47%;
+  width: 100%;
   color: #fff;
   margin: 0 auto;
 }
 header {
   font-family: "Microsoft YaHei";
-  font-size: 2rem;
-  height: 18px;
-  line-height: 18px;
-  padding: 11px 12px;
+  font-size: 0.76923077rem;
+  height: 0.69230769rem;
+  line-height: 0.69230769rem;
+  padding: 0.42307692rem 0.46153846rem;
   background: #331409;
 }
 header ul,
@@ -43,27 +92,39 @@ header img {
   display: inline-block;
 }
 header .dot_list li {
-  width: 11px;
-  height: 18px;
-  margin-right: 3px;
+  width: 0.38461538rem;
+  height: 0.38461538rem;
+  margin-right: 0.11538462rem;
+  border-radius: 50%;
   float: left;
 }
 header .dot_list li:nth-child(1),
 header .dot_list li:nth-child(2),
 header .dot_list li:nth-child(3) {
   background: url('../images/task3_dot_01.png') no-repeat center;
+  background-size: 100% 100%;
 }
 header .dot_list li:nth-child(4),
 header .dot_list li:nth-child(5) {
   background: url('../images/task3_dot_02.png') no-repeat center;
+  background-size: 100% 100%;
 }
-header .head_signal {
-  margin: 0 5px;
+header .signal_box {
+  width: 0.96153846rem;
+  height: 0.69230769rem;
+  margin: 0 0.11538462rem;
+}
+header .signal_box .head_signal {
+  width: auto\9;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 header .head_time {
   font-weight: bold;
-  font-size: 2.4rem;
-  margin-left: 48px;
+  font-size: 0.92307692rem;
+  margin-left: 1.84615385rem;
 }
 header .battery {
   float: right;
@@ -71,13 +132,22 @@ header .battery {
 header .battery li {
   display: inline-block;
 }
+header .battery .bat_image {
+  width: 1.92307692rem;
+  height: 0.69230769rem;
+}
 header .battery img {
   vertical-align: top;
+  width: auto\9;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 nav {
-  height: 88px;
-  line-height: 88px;
-  padding: 0 18px;
+  height: 3.38461538rem;
+  line-height: 3.38461538rem;
+  padding: 0 0.69230769rem;
   text-align: center;
   font-family: "Adobe Heiti Std R";
   color: #f8f6f5;
@@ -86,43 +156,46 @@ nav {
 nav a:nth-of-type(1) {
   float: left;
   background: url(../images/task3_arrow_06.png) no-repeat left center;
-  padding-left: 33px;
+  background-size: 23% 40%;
+  padding-left: 1.26923077rem;
 }
 nav a:nth-of-type(2) {
   float: right;
-  width: 37px;
-  height: 88px;
+  width: 1.42307692rem;
+  height: 3.38461538rem;
   background: url(../images/task3_dot_05.png) no-repeat left center;
+  background-size: 100% 10%;
 }
 nav a {
-  font-size: 2.6rem;
+  font-size: 1rem;
 }
 nav .title {
   display: inline-block;
-  font-size: 3.4rem;
+  font-size: 1.30769231rem;
 }
 .content {
-  height: 1008px;
+  height: 38.76923077rem;
   background-color: #68cdd5;
   text-align: center;
 }
 .content .backward {
   display: block;
-  width: 54px;
-  height: 54px;
-  background: url(../images/task3_arrow_07.png) no-repeat 35px 20px;
-  padding: 20px 0 40px 35px;
+  width: 2.07692308rem;
+  height: 2.07692308rem;
+  background: url(../images/task3_arrow_07.png) no-repeat 1.34615385rem 0.76923077rem;
+  background-size: 60% 47%;
+  padding: 0.76923077rem 0 1.53846154rem 1.34615385rem;
 }
 .content .logo {
   display: inline-block;
-  width: 181px;
-  height: 70px;
+  width: 6.96153846rem;
+  height: 2.69230769rem;
 }
 .content .cont_text {
-  font-size: 3rem;
+  font-size: 1.15384615rem;
   font-family: 'Hiragino Sans GB';
-  line-height: 5.4rem;
-  padding: 100px 92px;
+  line-height: 2.07692308rem;
+  padding: 3.84615385rem 3.53846154rem;
   text-align: left;
 }
 .content .intro div {
@@ -131,12 +204,14 @@ nav .title {
 }
 .content .intro div img {
   vertical-align: bottom;
+  width: 3.23076923rem;
+  height: 3.23076923rem;
 }
 .content .intro div span {
   display: block;
-  font-size: 2.4rem;
+  font-size: 0.92307692rem;
   font-family: "Adobe Heiti Std R";
-  line-height: 5.4rem;
+  line-height: 2.07692308rem;
 }
 .content .intro div:nth-child(1) {
   float: left;
