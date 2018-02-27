@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 html {
-  font-size: 11px;
+  font-size: 10.96875px;
 }
 @media (min-width: 320px) {
   html {
@@ -28,37 +28,22 @@ html {
 }
 @media (min-width: 360px) {
   html {
-    font-size: 15px;
+    font-size: 14.625px;
   }
 }
 @media (min-width: 412px) {
   html {
-    font-size: 17px;
+    font-size: 16.7375px;
   }
 }
 @media (min-width: 480px) {
   html {
-    font-size: 20px;
+    font-size: 19.5px;
   }
 }
 @media (min-width: 640px) {
   html {
     font-size: 26px;
-  }
-}
-@media (min-width: 720px) {
-  html {
-    font-size: 29px;
-  }
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 31px;
-  }
-}
-@media (min-width: 1349px) {
-  html {
-    font-size: 55px;
   }
 }
 .clearfix:after {
@@ -81,40 +66,43 @@ html {
 header {
   font-family: "Microsoft YaHei";
   font-size: 0.76923077rem;
+  text-align: center;
   height: 0.69230769rem;
   line-height: 0.69230769rem;
   padding: 0.42307692rem 0.46153846rem;
   background: #331409;
 }
-header ul,
-header span,
-header img {
+header .head_box {
+  float: left;
+}
+header .head_box ul,
+header .head_box span,
+header .head_box img {
   display: inline-block;
 }
-header .dot_list li {
+header .head_box .dot_list li {
   width: 0.38461538rem;
   height: 0.38461538rem;
   margin-right: 0.11538462rem;
   border-radius: 50%;
   float: left;
 }
-header .dot_list li:nth-child(1),
-header .dot_list li:nth-child(2),
-header .dot_list li:nth-child(3) {
+header .head_box .dot_list li:nth-child(1),
+header .head_box .dot_list li:nth-child(2),
+header .head_box .dot_list li:nth-child(3) {
   background: url('../images/task3_dot_01.png') no-repeat center;
   background-size: 100% 100%;
 }
-header .dot_list li:nth-child(4),
-header .dot_list li:nth-child(5) {
+header .head_box .dot_list li:nth-child(4),
+header .head_box .dot_list li:nth-child(5) {
   background: url('../images/task3_dot_02.png') no-repeat center;
   background-size: 100% 100%;
 }
-header .signal_box {
+header .head_box .signal_box {
   width: 0.96153846rem;
   height: 0.69230769rem;
-  margin: 0 0.11538462rem;
 }
-header .signal_box .head_signal {
+header .head_box .signal_box .head_signal {
   width: auto\9;
   width: 100%;
   max-width: 100%;
@@ -124,7 +112,6 @@ header .signal_box .head_signal {
 header .head_time {
   font-weight: bold;
   font-size: 0.92307692rem;
-  margin-left: 1.84615385rem;
 }
 header .battery {
   float: right;
