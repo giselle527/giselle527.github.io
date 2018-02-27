@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "图片自适应"
-description: 
+description: 让图片的大小随屏幕大小改变，图片清晰度问题有待解决。
 categories: []
 tags: []
 ---
