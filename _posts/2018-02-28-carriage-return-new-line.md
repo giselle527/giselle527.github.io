@@ -6,6 +6,16 @@ categories: [备份]
 tags: [git, CR, CRLF, LF]
 ---
 
+在gitbash中push文件到仓库时，经常会有如下警告：
+
+```
+warning: LF will be replaced by CRLF in xxxx.
+The file will have its original line endings in your working directory.
+
+```
+
+LF和CRLF是不同line-ending设置的结果。
+
 ## 回车与换行的区别
 
 |符号|ASCII码|中文|英文|控制字符|释义|
