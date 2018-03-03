@@ -93,13 +93,7 @@ html {
 	vertical-align: top;
 };
 
-.borderradius{ //border-radius兼容ie
-	behavior: url("PIE.htc");
-}
-
-
 // 设置样式
-
 
 .resume_wrap{
 	display: flex;
@@ -150,11 +144,9 @@ html {
 			border: 10/@size dashed @rcolor;
 			border-radius: 50%;
 			margin-top: 50/@size;
-			.borderradius;
 
 			img{
 			    border-radius: 50%;
-			    .borderradius;
 			    .img;
 			}
 	  	} 
@@ -209,7 +201,7 @@ html {
 		}
 
 		p{
-			font-size: 62.5/@size;
+			font-size: 50/@size;
 			color: @wcolor;
 			line-height: 87.5/@size;
 			text-align: left;
@@ -251,12 +243,10 @@ html {
 
 				&:nth-child(n+2){ // n从0开始：2和3一样
 					border-radius: 70% 0;
-					.borderradius;
 				}
 
 				&:nth-child(3n+1){ // 1和4一样
 					border-radius: 0 70%;
-					.borderradius;
 				}
 
 			} // 花瓣end

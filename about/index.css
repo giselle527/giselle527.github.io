@@ -54,9 +54,6 @@ html {
   overflow: hidden;
   vertical-align: top;
 }
-.borderradius {
-  behavior: url("PIE.htc");
-}
 .resume_wrap {
   display: flex;
   flex-flow: column nowrap;
@@ -106,11 +103,9 @@ html {
   border: 0.08rem dashed #ec483d;
   border-radius: 50%;
   margin-top: 0.4rem;
-  behavior: url("PIE.htc");
 }
 .r_head .h_center .h_portrait img {
   border-radius: 50%;
-  behavior: url("PIE.htc");
   width: auto\9;
   width: 100%;
   max-width: 100%;
@@ -161,7 +156,7 @@ html {
   line-height: 1.6rem;
 }
 .maincont .m_intro p {
-  font-size: 0.5rem;
+  font-size: 0.4rem;
   color: #fff;
   line-height: 0.7rem;
   text-align: left;
@@ -196,11 +191,9 @@ html {
 }
 .maincont .m_intro .m_index a:nth-child(n+2) {
   border-radius: 70% 0;
-  behavior: url("PIE.htc");
 }
 .maincont .m_intro .m_index a:nth-child(3n+1) {
   border-radius: 0 70%;
-  behavior: url("PIE.htc");
 }
 .maincont .m_cont {
   display: flex;
