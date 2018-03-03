@@ -49,13 +49,12 @@ tags: [快捷键, chrome, 欧路词典, windows, sogo]
 
 ## SOGO
 
-* ctrl+shift+m 系统菜单
+* ctrl+shift+n 系统菜单
 * ctrl+shift+b 字符表情
 * ctrl+shift+w 快捷造词
 * ctrl+shift+g 字根表
-* ctrl+shift+d 自定义短语
+* ctrl+shift+y 自定义短语
 * ctrl+shift+f 简繁体切换
-* ctrl+shift+s 显示/隐藏状态栏
 
 ## 欧路词典
 
