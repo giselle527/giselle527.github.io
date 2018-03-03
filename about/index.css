@@ -61,12 +61,12 @@ html {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  padding-top: 0.64rem;
+  margin-top: -2rem;
+  padding-top: 0.896rem;
   font-family: "微软雅黑", sans-serif;
   background-color: #252628;
   box-shadow: inset 0 5px 5px #333, inset 0 -5px 5px #666, inset 5px 0 5px #474747, inset -5px 0 5px #474747;
   border-radius: 20px;
-  margin-top: -2rem;
 }
 .r_head {
   display: flex;
@@ -132,8 +132,8 @@ html {
   vertical-align: top;
 }
 .r_head .h_info {
-  margin-top: 0.496rem;
-  width: 6.24rem;
+  margin: 0.496rem 0 0 0.64rem;
+  width: 5.6rem;
   height: 4.496rem;
   overflow: hidden;
   font-size: 0.304rem;
@@ -162,7 +162,6 @@ html {
 }
 .maincont .m_intro p {
   font-size: 0.5rem;
-  font-family: "华文楷体", sans-serif;
   color: #fff;
   line-height: 0.7rem;
   text-align: left;
@@ -219,6 +218,7 @@ html {
   color: #ec483d;
   letter-spacing: 0.5rem;
   text-align: center;
+  flex-shrink: 0;
 }
 .maincont .m_cont .m_detail {
   border-left: 0.04rem solid #ec483d;
