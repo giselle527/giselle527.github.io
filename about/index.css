@@ -14,7 +14,32 @@ a {
   color: #d4d4d4;
 }
 html {
-  font-size: 32.25806452px;
+  font-size: 13.60887097px;
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 16.12903226px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 18.14516129px;
+  }
+}
+@media (min-width: 412px) {
+  html {
+    font-size: 20.76612903px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 24.19354839px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 32.25806452px;
+  }
 }
 .clearfix {
   content: "";
@@ -41,6 +66,7 @@ html {
   background-color: #252628;
   box-shadow: inset 0 5px 5px #333, inset 0 -5px 5px #666, inset 5px 0 5px #474747, inset -5px 0 5px #474747;
   border-radius: 20px;
+  margin-top: -2rem;
 }
 .r_head {
   display: flex;
