@@ -133,9 +133,11 @@ html {
 .r_head .h_info li {
   color: #d4d4d4;
 }
-.r_head .h_info li span,
-.r_head .h_info li a {
-  margin-left: 0.16rem;
+.r_head .h_info li .h_icon {
+  display: inline-block;
+  width: 1.125em;
+  height: 1em;
+  margin-right: 0.16rem;
 }
 .maincont {
   display: flex;
@@ -222,6 +224,9 @@ html {
   text-align: left;
 }
 .maincont .m_cont .m_detail li .m_icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
   margin: 0 0.3rem 0 -0.7rem;
   color: #ec483d;
 }
@@ -256,7 +261,7 @@ body:after {
   content: "";
   display: block;
   position: absolute;
-  background: url("01_head_bg.png") no-repeat center;
+  background: url("images/01_head_bg.png") no-repeat center;
   width: 0;
   height: 0;
 }

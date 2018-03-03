@@ -176,8 +176,11 @@ html {
 		li{
 		    color: @gcolor; 
 
-		    span,a{
-				margin-left: 20/@size;
+		    .h_icon{
+		    	display: inline-block;
+		    	width: 1.125em; //我是根据父级或同级的字体大小来定的宽高
+		    	height: 1em;
+		    	margin-right: 20/@size;
 		    }
 		}
   	}
@@ -289,8 +292,12 @@ html {
 				text-align: left;
 
 				.m_icon{
+					display: inline-block;
+					width: 1em;
+					height: 1em;
 					margin: 0 37.5/@size 0 -87.5/@size;
 					color: @rcolor;
+
 				}
 
 			}
@@ -333,7 +340,7 @@ body:after{
 	content: "";
 	display: block;
 	position: absolute;
-	background: url("01_head_bg.png") no-repeat center;
+	background: url("images/01_head_bg.png") no-repeat center;
 	width: 0;
 	height: 0;
 }
