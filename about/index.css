@@ -10,7 +10,8 @@ ul {
   list-style: none;
 }
 a {
-  text-decoration: none !important;
+  text-decoration: none;
+  border: none;
   color: #d4d4d4;
 }
 html {
