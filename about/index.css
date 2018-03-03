@@ -41,6 +41,26 @@ html {
     font-size: 32.25806452px;
   }
 }
+@media (min-width: 720px) {
+  html {
+    font-size: 36.29032258px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 38.70967742px;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 51.61290323px;
+  }
+}
+@media (min-width: 1349px) {
+  html {
+    font-size: 67.99395161px;
+  }
+}
 .clearfix {
   content: "";
   display: block;
