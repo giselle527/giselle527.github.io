@@ -139,6 +139,9 @@ html {
   height: 1em;
   margin-right: 0.16rem;
 }
+.r_head .h_info li a:hover {
+  color: #ec483d;
+}
 .maincont {
   display: flex;
   flex-flow: column nowrap;
