@@ -256,3 +256,11 @@ html {
 .maincont .m_intro:last-of-type {
   margin-bottom: 1rem;
 }
+body:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("01_head_bg.png") no-repeat center;
+  width: 0;
+  height: 0;
+}

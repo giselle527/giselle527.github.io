@@ -325,3 +325,14 @@ html {
 
 } // .maincont end
 
+// 预加载
+
+body:after{
+	content: "";
+	display: block;
+	position: absolute;
+	background: url("01_head_bg.png") no-repeat center;
+	width: 0;
+	height: 0;
+}
+
