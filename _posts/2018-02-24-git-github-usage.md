@@ -168,8 +168,8 @@ ssh -T git@github.com
     * 用法1：`git reset a`，a是一个版本号，这里假设a是上上个版本。执行git reset之后，git log会发现少了上个版本（即当前版本到a的下一个版本全没有了），但是a版本还在，且文件内容是最新内容，没有做修改
     * 用法2：`git reset HEAD file` 撤销暂存区的修改操作，重新放回工作区(HEAD表示当前位置)
 * git reset \-\-hard HEAD^回退到上个版本
-    * git reset  \-\-hard HEAD^^回退到上上个版本
-    * git reset  \-\-hard HEAD~100 回退到前100个版本
+    * git reset \-\-hard HEAD^^回退到上上个版本
+    * git reset \-\-hard HEAD~100 回退到前100个版本
 * git branch 查看分支，会列出所有的分支，当前分支前面会添加一个星号
     * git branch name 创建分支name
     * git branch -d name 删除分支name
