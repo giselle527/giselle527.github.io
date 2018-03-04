@@ -2,8 +2,8 @@
 layout: post
 title: "新年许一个愿望"
 description: 在about页面没写好之前用的这个内容，留下来作个纪念。
-categories: []
-tags: []
+categories: [随想]
+tags: [about头文件, about页面前生]
 ---
 
 ## 慢慢，不愿放弃
