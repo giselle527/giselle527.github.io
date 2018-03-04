@@ -46,10 +46,10 @@ git工具是github客户端的命令行版，github客户端是git工具的可�
 **Step1 设置贡献者**  
   
 打开git-bash，逐条输入并回车：    
-git config --global  user.email "你的邮箱"    
-git config --global  user.name "你的用户名"     
+git config \-\-global  user.email "你的邮箱"    
+git config \-\-global  user.name "你的用户名"     
            
-> git config  --global参数表示这台机器上所有的Git仓库都会使用这个配置(即相同的邮箱和用户名)，也可以对某个仓库指定不同的用户名和邮箱。
+> git config  \-\-global参数表示这台机器上所有的Git仓库都会使用这个配置(即相同的邮箱和用户名)，也可以对某个仓库指定不同的用户名和邮箱。
   
 **Step2 生成ssh**  
       
@@ -141,7 +141,7 @@ ssh -T git@github.com
 ## 常用的git命令
 
 * git init 初始化
-* git --version 查看git版本
+* git \-\-version 查看git版本
 * git status 查看git状态，总共有9种状态，常见到的有以下5种：
     * untracked files 未被git管理的文档
     * modified 被修改了的文档，显示红色表示是对工作区文件进行了修改，显示绿色表示对暂存区文档进行了修改
@@ -149,14 +149,14 @@ ssh -T git@github.com
     * deleted 代码被删除
     * both modified 多在merge/pull/rebase/revert时发生了conflict时显示
 * git log 查看历史
-    * git log --pretty=oneline 查看简写版历史（包括版本号和提交日志...）
-    * git log --graph --pretty=oneline --abbrev-commit 查看图像版历史
+    * git log \-\-pretty=oneline 查看简写版历史（包括版本号和提交日志...）
+    * git log \-\-graph \-\-pretty=oneline \-\-abbrev-commit 查看图像版历史
     * git reflog 查看所有的版本号及相关信息
 * git diff 查看差异
     * 无参数的情况下，查看的是working tree和last commit之间的差异
     * 有参数的情况下，如 `git diff a b`，a和b为版本号，查看的是a版本和b版本之间的差异
     * git diff→diff的是工作区代码的差异
-    * git diff --cached→diff的是暂存区代码的差异
+    * git diff \-\-cached→diff的是暂存区代码的差异
     * 显示 modified: xxxx文件名 时，如果想看文件做了哪些修改，直接 git diff 文件名 就可以(-表示删除，+表示添加，没写表示没有改动)
 * git commit 提交/前进功能
 * git revert 转换/后退功能
@@ -167,22 +167,22 @@ ssh -T git@github.com
 * git reset 重置/后退功能
     * 用法1：`git reset a`，a是一个版本号，这里假设a是上上个版本。执行git reset之后，git log会发现少了上个版本（即当前版本到a的下一个版本全没有了），但是a版本还在，且文件内容是最新内容，没有做修改
     * 用法2：`git reset HEAD file` 撤销暂存区的修改操作，重新放回工作区(HEAD表示当前位置)
-* git reset --hard HEAD^回退到上个版本
-    * git reset  --hard HEAD^^回退到上上个版本
-    * git reset  --hard HEAD~100 回退到前100个版本
+* git reset \-\-hard HEAD^回退到上个版本
+    * git reset  \-\-hard HEAD^^回退到上上个版本
+    * git reset  \-\-hard HEAD~100 回退到前100个版本
 * git branch 查看分支，会列出所有的分支，当前分支前面会添加一个星号
     * git branch name 创建分支name
     * git branch -d name 删除分支name
-    * git push --delete origin name 删除远程仓库分支name
+    * git push \-\-delete origin name 删除远程仓库分支name
     * git branch -a 查看所有本地分支和远程分支
     * git branch -r 只查看远程分支
-* git checkout -- file 撤销，丢弃工作区的修改，file是文件名
+* git checkout \-\- file 撤销，丢弃工作区的修改，file是文件名
 * git checkout name 切换到name分支上
 * git checkout -b name 创建并切换到分支name上，等于`git branch <分支名>`+`git checkout <分支名>`
 * git merge name 将指定分支name合并到当前分支上 
 * git remote show origin 查看远程仓库的详细信息
     * git remote -v 查看远程仓库名和地址(show remote url after name)
-* --help参数，可以寻求帮助
+* \-\-help参数，可以寻求帮助
 
 ## 常用远程操作命令
 
@@ -191,6 +191,7 @@ ssh -T git@github.com
 * 本地有仓库，远程没有仓库，用push。在github上新建一个仓库，获取仓库地址
 * 已有本地仓库，同步到远程仓库，从本地仓库同步到远程仓库，用push。git push origin master
 * 本地已有仓库，远程仓库有更新，从远程仓库同步到本地仓库，用pull。git pull origin master
+* 回退命令对本地库起作用。使用回退命令后，本地的fast-forward会比远程仓库的早，想要远程仓库和本地同步，用push \-\-force（如果本地库的fast-forward比远程新，就不需要\-\-force）。
 
 ## 解决冲突conflict
 
@@ -225,7 +226,7 @@ av1和av2都是a文档的fast-forward，av3是av1和av2的fast-forward，所以�
 $ git config --global alias.co checkout
 
 ```
---global参数是全局参数，也就是这些命令在这台电脑的所有Git仓库下都有用。
+\-\-global参数是全局参数，也就是这些命令在这台电脑的所有Git仓库下都有用。
 
 ### 查看
 
@@ -325,14 +326,14 @@ $ git config --global core.editor "D:/Program\ Files/Sublime\ Text\ 3/sublime_te
 2. 空格在git-bash里有特殊意义，需要用\转义；
 3. sublime是异步软件，git-bash是同步软件，为了让sublime适配git-bash，需要在末尾加-w
 4. 命令还可以写作：    
-$ git config --global core.editor "'D:/Program Files/Sublime Text 3/sublime_text.exe' -w"
+$ git config \-\-global core.editor "'D:/Program Files/Sublime Text 3/sublime_text.exe' -w"
 
 
-## git log --graph --decorate --stat
+## git log \-\-graph \-\-decorate \-\-stat
 
-简版加--oneline命令：`git log --graph --oneline --decorate`
+简版加\-\-oneline命令：`git log --graph --oneline --decorate`
 
-### --graph
+### \-\-graph
 
 ```
 
@@ -347,18 +348,18 @@ $ git config --global core.editor "'D:/Program Files/Sublime Text 3/sublime_text
 
 ```
 
-### --decorate
+### \-\-decorate
 
 origin/jnshu, jnshu
 
-### --stat
+### \-\-stat
 
 ```
 
 README.md    |  8 ++++++++
-index.html   | 26 --------------------------
-mytask0.html | 43 -------------------------------------------
-test.html    | 11 -----------
+index.html   | 26 ------------------
+mytask0.html | 43 --------------------------
+test.html    | 11 --------------
 4 files changed, 8 insertions(+), 80 deletions(-)
 
 ```
