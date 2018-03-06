@@ -28,7 +28,7 @@ tags: []
 
 | 工具 | 用途 | 用法 |
 | :--: | :--: | :--- |
-| (在线网站)[https://tinypng.com/] | 优化PNG/JPG图片 | 1.把需要优化的图片拖拽进ImageOptim，就能够完成对图片的优化。2.可以批量拖拽。 |
+| [在线网站](https://tinypng.com/) | 优化PNG/JPG图片 | 1.把需要优化的图片拖拽进ImageOptim，就能够完成对图片的优化。2.可以批量拖拽。 |
 | SVGO工具 | 优化SVG | [张鑫旭大神的教程](http://www.zhangxinxu.com/wordpress/2016/02/svg-compress-tool-svgo-experience/)写的很详细。 |
 | jpegtran | 优化JPG图片 | search |
 | OptiPNG | 优化无损PNG | search |
@@ -48,7 +48,6 @@ tags: []
 
 前端工程师的重复性工作，例如合并静态资源、压缩JS和CSS文件、编译SASS等都可以使用Grunt等自动化工具批量完成，图片优化也是如此。grunt-image非常强大，支持批量自动优化PNG、JPG、SVG和GIF，支持单图片优化和全目录优化。
 
-```
 {% highlight javascript linenos %}
 module.exports = function (grunt) {
     grunt.initConfig({
@@ -89,8 +88,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-image');
 };
 {% endhighlight %}
-
-```
 
 ↑不是很懂，需要亲自试一下，看看效果。
 
