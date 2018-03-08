@@ -165,6 +165,9 @@ html {
   padding: 0 2.4rem;
   margin-bottom: 0.3rem;
 }
+.maincont .m_intro p a:hover {
+  color: #ec483d;
+}
 .maincont .m_intro p:nth-of-type(1) {
   margin-top: 0.4rem;
 }
