@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>笔记检索</title>
+		<link href="index.css" rel="stylesheet">
+	</head>
+
+<body>
+	<h1>HTML+CSS基础知识笔记检索</h1>
+
+	<div class="boss1">
+		<div class="note1">
+			<h3><a href="https://www.douban.com/note/569510993/" target="_blank">HTML+CSS基础知识</a></h3>
+			<ol>
+			<li>DIV标签、!DOCTYPE HTML标签</li>
+			<li>meta标签及其http-equiv和name属性</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/569673992/" target="_blank">HTML+CSS基础知识(1)</a></h3>
+			<ol>
+			<li>html根标签、head头部标签及头部元素</li>
+			<li>代码注释<code><</code>!--注释文字--<code>></code></li>
+			<li>标签的作用及语义化的作用</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/569728157/" target="_blank">HTML+CSS基础知识(2)</a></h3>
+			<ol>
+			<li>p段落标签、hx标题标签</li>
+			<li>em标签、strong标签、span标签</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/570328963/" target="_blank">HTML+CSS基础知识(3)</a></h3>
+			<ol>
+			<li>q引用标签、blockquote大段引用标签</li>
+			<li>br折行标签、空标签、<code>&</code>nbsp;空格代码、hr水平横线标签</li>
+			<li>address邮件地址、签名、作者身份标签</li>
+			<li>code显示代码标签、pre预格式化标签</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/570503399/" target="_blank">HTML+CSS基础知识(4)</a></h3>
+			<ol>
+			<li>UL-LI无序列表标签、OL-LI有序列表标签</li>
+			<li>
+			<a href="https://www.douban.com/note/573226919/" target="_blank">DL自定义标签和<strong>字符实体</strong></a>
+			</li>
+			<li>div标签、创建表格tbody/tr/th/td</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/570593922/" target="_blank">HTML+CSS基础知识(5)</a></h3>
+			<ol>
+			<li>给表格边框加样式：宽度、线型、颜色详解</li>
+			<li>border-width/border-style/border-color</li>
+			<li><strong>空格</strong>表示父子关系，<strong>逗号</strong>表示同辈关系</li>
+			<li>标签里直接加<em>style="..."</em>添加内部样式，头部元素里加<em>style type标签</em>添加外部样式</li>
+			<li>table summary="..."给表格添加摘要，摘要不显示</li>
+			<li>caption标签给表格添加标题</li>
+			<li>cellspacing/cellpadding的设置</li>
+			<li>boder-collapse:collapse或separate</li>
+			<li>属性和样式的区别及style属性</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/570604603/" target="_blank">HTML+CSS基础知识(6)</a></h3>
+			<ol>
+			<li>a超链接标签：a href加载网址或邮件的方法</li>
+			<li>设置a超链接标签的颜色和下划线等</li>
+			<li>新标签打开网址，发送、抄送、密送邮箱及主题、内容等</li>
+			<li>img图片标签：img src</li>
+			</ol>
+		</div>
+
+		<div class="note2">
+			<h3><a href="https://www.douban.com/note/570618755/" target="_blank">HTML+CSS基础知识(7)</a></h3>
+			<ol>
+			<li>form表单标签：method/action</li>
+			<li>label for文本标签、textarea文本域标签:rows/cols</li>
+			<li>input type文本框标签：text/password/submit/reset</li>
+			<li>radio单选、checkbox多选</li>
+			<li>下拉列表：select单选、select multiple多选</li>
+			</ol>
+
+			<table class="test1" style="margin:0px 40px 20px; text-align:center;" summary="你说是啥就是啥吧，女孩子又情绪化又感性，搞不懂。">
+			<tbody>
+			<caption style="font-size:18px; font-weight:bold;">女孩的心思你别猜</caption>
+			<tr>
+			<th>日期</th>
+			<th>年龄</th>
+			<th>生气次数</th>
+			<th>生气原因</th>
+			</tr>
+			<tr>
+			<td>7月7日</td>
+			<td>7岁</td>
+			<td>1次</td>
+			<td>七月七心晴</td>
+			</tr>
+			<tr>
+			<td>7月14日</td>
+			<td>17岁</td>
+			<td>4次</td>
+			<td>七月十四要丸</td>
+			</tr>
+			</tbody>
+			</table>
+
+			<form style="border:0.5px dashed orange; width:50%; padding:0px 20px 20px 20px; margin:0px 40px;" class="test2" method="post" action="?">
+			<h4><div style="text-align:center;">WEB前端学习调查</div></h4>
+			<label for="name">姓名：</label>
+			<input type="text" name="name" class="name" value="" /><!--文本框-->
+			<br /><br />
+			<label>性别：</label><!--单选区-->
+			<input type="radio" value="1" name="gender" class="male" />
+			<label for="male">男</label>
+			<input type="radio" value="2" name="gender" class="female" />
+			<label for="female">女</label>
+			<input type="radio" value="3" name="gender" class="other" />
+			<label for="other">其他</label>
+			<br /><br />
+			<label>年龄：</label><!--下拉列表单选区-->
+			<select>
+			<option value="age1">11-20岁</option>
+			<option value="age2" selected="selected">21-30岁</option>
+			<option value="age3">31-40岁</option>
+			</select>
+			<br /><br />
+			<div style="height:0em;"><label>方式：</label></div><!--下拉列表多选区-->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select multiple="multiple">
+			<option value="way1" selected="selected">在校学习</option>
+			<option value="way2">自学</option>
+			<option value="way3">辅导班</option>
+			<option value="way4">继续教育</option>
+			</select>
+			<br /><br />
+			<label>难点：</label><!--多选区-->
+			<input type="checkbox" value="why1" name="reason1" class="reason1" />
+			<label for="reason1">注意力不集中</label>&nbsp;&nbsp;
+			<input type="checkbox" value="why2" name="reason2" class="reason2" />
+			<label for="reason2">英语差</label><br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" value="why4" name="reason4" class="reason4" />
+			<label for="reason4">动手能力差</label>&nbsp;&nbsp;
+			<input type="checkbox" value="why3" name="reason3" class="reason3" />
+			<label for="reason3">记性差</label><br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" value="why5" name="reason5" class="reason5" />
+			<label for="reason5">其他原因</label>
+			<input type="text" style="width:120px;" name="reason5" value="" />
+			<br /><br />
+			<div style="height:0"><label for="thought">感想：</label></div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<textarea cols="23" rows="5" class="thought" style="border:1px solid grey;">畅所欲言……</textarea>
+			<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="submit" name="submit" value="提交" />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="reset" name="reset" value="重置" />
+			</form>
+
+
+			<h3><a href="https://www.douban.com/note/570633886/" target="_blank">HTML+CSS基础知识(8)</a></h3>
+			<ol>
+			<li>CSS层叠样式表介绍</li>
+			<li>CSS代码语法：选择符/选择器+声明（属性+值）</li>
+			<li>CSS注释语句：/*内容*/</li>
+			<li>CSS插入形式：内联式、嵌入式和外部式及优先级</li>
+			<li>内联式：给标签加style=""</li>
+			<li>嵌入式：写在style type标签内</li>
+			<li>外部式：写在单独的文件内，用link标签插入</li>
+			<li>class类选择器和ID选择器介绍及其差别</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/570743013/" target="_blank">HTML+CSS基础知识(9)</a></h3>
+			<ol>
+			<li>子选择器“>”</li>
+			<li>包含选择器“空格”</li>
+			<li>通用选择器“*”</li>
+			<li>伪类选择器“hover”</li>
+			<li>分组选择器“,”</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/570752571/" target="_blank">HTML+CSS基础知识(10)</a></h3>
+			<ol>
+			<li>CSS样式的继承性和非继承性</li>
+			<li>权值：标签1、类选择器10、ID选择器100</li>
+			<li>CSS样式优先级</li>
+			<li>!important的用途，权值最高</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/570833597/" target="_blank">HTML+CSS基础知识(11)</a></h3>
+			<ol>
+			<li>字体font-family、字号font-size、颜色color</li>
+			<li>粗体font-weight:bold、斜体font-style:italic</li>
+			<li>text-decoration:underline下划线、line-through删除线</li>
+			<li>长度单位：px/em/pt/rem</li>
+			<li>段落缩进text-indent、行间距/行高line-height</li>
+			<li>段落对齐text-align:left/center/right</li>
+			<li>字间距letter-spacing、字母间距word-spacing</li>
+			</ol>
+			<p></p>
+
+		</div>
+
+		<div class="note3">
+
+			<h3><a href="https://www.douban.com/note/571027859/" target="_blank">HTML+CSS基础知识(12)</a></h3>
+			<ol>
+			<li>块状元素div等：{display:block;}</li>
+			<li>内联元素span等：{display:inline;}</li>
+			<li>内联块状元素input等：{display:inline-block;}</li>
+			<li>盒模型：边框border、宽度width、高度height</li>
+			<li>盒模型：内边距padding、外边距margin</li>
+			<li>盒模型代码缩写</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/571041219/" target="_blank">HTML+CSS基础知识(13)</a></h3>
+			<ol>
+			<li>CSS布局模型</li>
+			<li>流动模型flow</li>
+			<li>浮动模型float:left/right</li>
+			<li>层模型layer：绝对/相对/固定定位</li>
+			<li>position:absolute</li>
+			<li>position:relative</li>
+			<li>position:fixed</li>
+			<li>position:relative</li>
+			<li>absolute和relative组合使用</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/571298101/" target="_blank">HTML+CSS基础知识(14)</a></h3>
+			<ol>
+			<li>水平居中：行内元素和块状元素</li>
+			<li>行内元素居中：text-align:center</li>
+			<li>定宽块状元素居中：定宽+左右margin为auto</li>
+			<li>不定宽块状元素居中1：加table标签</li>
+			<li>不定宽块状元素居中2：变行内元素</li>
+			<li>不定宽块状元素居中2：通过浮动和相对定位实现</li>
+			<li>list-style:none;</li>
+			</ol>
+			<h3><a href="https://www.douban.com/note/571662627/" target="_blank">HTML+CSS基础知识(15)</a></h3>
+			<ol>
+			<li>父元素高度确定的单行文本：行高与行间距一致</li>
+			<li>父元素高度确定的多行文本：插入table标签</li>
+			<li><a href="https://www.douban.com/note/574478372/" target="_blank">垂直居中问题答疑</a></li>
+			<li>父元素高度确定的多行文本：display:table-cell加vertical-align:middle</li>
+			<li>将父元素变成内联块状元素：固定定位或者浮动</li>
+			</ol>		
+		</div>
+
+	</div> <!--boss1到这里结束-->
+
+	<hr style="float:left; width:100%; border:2px dotted red;" />
+
+	<div class="boss2">
+		<h3>小知识补充</h3>
+		<p style="position:relative;">
+		font-size字体大小、text-align文本对齐、charset页面字符集<br>
+		常用的charset编码格式有2种，一种是utf-8，国际通用；一种是gb2312，国内最常用<br>
+		边框宽：border-width:thin,medium,thick<br>
+		边框线型：border-style:none,dotted,dashed,solid,double,groove,ridge,inset,outset<br>
+		下划线：text-decoration:underline,none<br>
+		删除线标签：s标签和del标签<br>
+		上标标签和下标标签：sup标签和sub标签<br>
+		斜体标签：i标签和em标签<br>
+		加粗标签：b标签和strong标签<br>
+		空标签又叫void element空位元素又叫自闭合标签<br><br>
+		<strong>合并表格的行和列：</strong><br>
+		给td加属性rowspan="合并的行数"：要删除相应的被合并的行的td<br>
+		给td加属性colspan="合并的列数"：要删除相应的被合并的列，即同一行的td<br><br>
+		&lt;!doctype html&gt;就是html5的声明<br>
+		注意&lt;!doctype html&gt;是声明，是放在&lt;html&gt;上面的，而不是来代替&lt;html&gt;的<br>
+		&lt;meta charset="utf-8"&gt;要放在头部区域的最前面<br>
+		有序列表的项目符号有5种：1、a、A、i（小写罗马字母）、I（大写罗马字母）<br>
+		无序列表的项目符号有3种：circle项目符号为空心圆、disc项目符号为实心圆、square项目符号为实心方块<br><br>
+		<strong>属性值的控制因素：</strong><br>
+			a. 并列：值用空格隔开，必须全部出现，顺序不能改变<br>
+	    	b. 互斥：值用|隔开，有且只能有一个值出现<br>
+	    	c. 并且：值用&&隔开，必须全部出现，顺序可调整<br>
+	    	d. 或者：值用||隔开，至少有一个值必须出现，顺序可调整<br>
+	    	e. 分组符号：值用[ ]括起来，中括号之间用空格隔开，例：center和top和red就是[center|left] [top&&red]的一种属性值<br>
+	    	f. *表示属性值出现的次数：0次、1次或多次<br>
+	    	g. +表示属性值出现的次数：1次或多次<br>
+	    	h. ?表示属性值可有可无<br>
+	    	优先级：[] > 并列 > 并且&& > 或者|| > 互斥|<br><br>
+		<strong>SUBLIME使用宝典</strong><br>
+			命令面板/命令模式：ctrl+shift+p<br>
+			打开颜色选择器：ctrl+shift+c<br>
+			ctrl+c<br>
+			ctrl+v → ctrl+shift+v粘贴时会保持原格式（缩进）<br>
+			ctrl+s<br>
+			ctrl+z撤销<br>
+			ctrl+y恢复撤销<br>
+			在当前行下面添加一行：ctrl+enter<br>
+			在当前行上面添加一行：ctrl+shift+enter<br>
+			添加注释：ctrl+/<br>
+			取消注释：ctrl+shift+/<br>
+			替换：ctrl+h<br>
+			选中下一个：ctrl+d<br>
+			跳过：ctrl+k<br>
+			选中整行：ctrl+l<br>
+			选中括号内的内容：ctrl+shift+m<br>
+			光标移至括号内结束或开始的位置：ctrl+m<br>
+			增加缩进：ctrl+]（右大括号）<br>
+			减少缩进：ctrl+[（左大括号）<br>
+			选中代码，按下快捷键，折叠代码：ctrl+shift+[<br>
+			选中代码，按下快捷键，展开代码：ctrl+shift+]<br>
+			展开所有折叠代码：ctrl+shift+0<br>
+			向左单位性地快速移动光标：ctrl+←<br>
+			向左单位性地选中文本：Ctrl+Shift+←<br>
+			向右单位性地快速移动光标：ctrl+→<br>
+			向右单位性地选中文本：Ctrl+Shift+→<br>
+			向上选中多行：shift+↑<br>
+			将光标所在行和上一行代码互换（将光标所在行插入到上一行之前）：Ctrl+Shift+↑<br>
+			将光标所在行和下一行代码互换（将光标所在行插入到下一行之后）：Ctrl+Shift+↓<br>
+			向下选中多行：shift+↓<br>
+			向左选中文本：Shift+←<br>
+			向右选中文本：Shift+→<br>
+			向上添加多行光标，可同时编辑多行：Ctrl+Alt+↑<br>
+			向下添加多行光标，可同时编辑多行：Ctrl+Alt+↓<br>
+			合并选中的多行代码为一行：Ctrl+J<br>
+			复制光标所在整行，插入到下一行：Ctrl+Shift+D<br>
+			转换大写：ctrl+k+u<br>
+			转换小写：ctrl+k+l<br>
+			左右字母互换：ctrl+t<br>
+			开启/关闭Sidebar：Ctrl+K+B<br>
+			全屏模式：F11<br>
+			免打扰模式：Shift+F11<br>
+
+		<br>	go to anything：ctrl+p 打开搜索框<br>
+			↓<br>
+			1. 输入当前项目中的文件名，快速搜索、打开文件<br>
+			2. 直接输入文件路径打开指定文件<br>
+			3. #+关键字，查找文件中的变量名、属性名等，eg #body<br>
+			4. @+关键字，查找文件中的函数名<br>
+			5. :+数字，跳转到文件中该行代码<br>
+
+		<br>	多行游标：<br>
+			1.alt+F3（快速多选的意思）<br>
+			2.shift+鼠标右键<br>
+			3.ctrl+a，然后ctrl+shfit+l （PS：主要是ctrl+shfit+l 在起作用，选中任一部分，按ctrl+shfit+l ，选中的每一行后面都会出现多行游标）<br>
+
+		<br>	Ctrl+Tab 按文件浏览过的顺序，切换当前窗口的标签页<br>
+			Ctrl+PageDown 向左切换当前窗口的标签页<br>
+			Ctrl+PageUp 向右切换当前窗口的标签页<br>
+
+		<br>	Alt+Shift+1 窗口分屏，恢复默认1屏（非小键盘的数字，非F1）<br>
+			Alt+Shift+2 左右分屏-2列<br>
+			Alt+Shift+3 左右分屏-3列<br>
+			Alt+Shift+4 左右分屏-4列<br>
+			Alt+Shift+5 等分4屏<br>
+			Alt+Shift+8 垂直分屏-2屏<br>
+			Alt+Shift+9 垂直分屏-3屏<br>
+		</p>
+	</div> <!--boss2到这里结束-->
+
+	<div class="boss3">
+	<h3><a href="https://www.douban.com/note/582563437/" target="_blank">JS学习笔记</a></h3>
+	<h3><a href="https://www.douban.com/note/574115755/" target="_blank">Q&A-温故知新</a></h3>
+	<h3><a href="https://www.douban.com/note/570329259/" target="_blank">WEB前端参考资料</a></h3>
+	<ol>
+	<li>Sublime Text 3 使用问题答疑</li>
+	<li>px,em,rem单位转换工具：http://pxtoem.com/</li>
+	<li>HTML标签对应英文全称及中文翻译</li>
+	<li>颜色值缩写</li>
+	<li>盒模型代码缩写：方向顺时钟</li>
+	<li>字体缩写</li>
+	<li>颜色值：含护眼颜色值</li>
+	<li>长度值</li>
+	<li>隐性改变display类型</li>
+	<li>盒子模型的顺序</li>
+	<li>清除浮动的常用方法</li>
+	<li>firebug使用方法</li>
+	<li>计算机各类型的语言和编码格式</li>
+	<li>背景图片和透明度</li>
+	<li>用CSS隐藏超出长度的文本</li>
+	<li>VSCODE的使用</li>
+
+
+	</ol>
+	</div> <!--boss3到这里结束-->
+
+</body>
+</html>
+

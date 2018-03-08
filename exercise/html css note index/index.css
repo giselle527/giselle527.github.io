@@ -1,0 +1,108 @@
+html {
+  font-size: 5.12333966px;
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 6.07210626px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 6.83111954px;
+  }
+}
+@media (min-width: 412px) {
+  html {
+    font-size: 7.81783681px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 9.10815939px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 12.14421252px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 13.66223909px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 14.57305503px;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 19.43074004px;
+  }
+}
+@media (min-width: 1349px) {
+  html {
+    font-size: 25.59772296px;
+  }
+}
+div {
+  font-size: 0.8rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+body {
+  background: #faf9dd url(http://ww2.sinaimg.cn/mw690/6cccc1b7gw1f6la7z2ag8j208c05zmxq.jpg) no-repeat 100% 0%;
+}
+h1,
+h3,
+table,
+form {
+  font-family: "华文楷体", sans-serif;
+}
+table tr td,
+th {
+  border: 1px solid #F33;
+}
+.boss1 {
+  float: left;
+}
+.boss2 {
+  float: left;
+}
+.boss3 {
+  float: right;
+}
+.boss2,
+.boss3,
+.note1,
+.note2,
+.note3 {
+  width: 23rem;
+  padding-left: 2.5rem;
+  margin: 0;
+}
+.note1 {
+  float: left;
+}
+.note2 {
+  float: right;
+  background: url(http://ww1.sinaimg.cn/mw690/6cccc1b7gw1f6la7r1xy2j20eq0akq4s.jpg) no-repeat 100% 106%;
+}
+.note2 p {
+  height: 10rem;
+}
+.note3 {
+  float: left;
+}
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+}

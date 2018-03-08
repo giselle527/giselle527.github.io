@@ -1,0 +1,108 @@
+
+@fontsize: 30;
+@uiwidth: 1054; //ui图宽度
+@scale: @fontsize/@uiwidth;
+@size: @fontsize*1rem;
+
+html { 
+	font-size: @scale*270px;
+}
+@media (min-width:320px){
+  	html{
+		font-size: @scale*320px;
+  	}
+}
+@media (min-width:360px){
+  	html{
+		font-size: @scale*360px;
+  	}
+}
+@media (min-width:412px){
+  	html{
+		font-size: @scale*412px;
+  	}
+}
+@media (min-width:480px){
+  	html{
+		font-size: @scale*480px;
+  	}
+}
+@media (min-width:640px){
+  	html{
+		font-size: @scale*640px;
+  	}
+}
+@media (min-width:720px){
+  	html{
+		font-size: @scale*720px;
+  	}
+}
+@media (min-width:768px){
+  	html{
+		font-size: @scale*768px;
+  	}
+}
+@media (min-width:1024px){
+  	html{
+		font-size: @scale*1024px;
+  	}
+}
+@media (min-width:1349px){
+  	html{
+		font-size: @scale*1349px;
+  	}
+}
+
+.content{
+	width:500/@size;
+	margin: 50/@size auto;
+
+	.box{
+		margin-left:50/@size;
+		
+		input{
+			border:2/@size dashed orange;
+			width:50/@size;
+			line-height:50/@size;
+			background-color:#EAF899;
+			border-radius:50% 50%;
+			text-align:center;
+			font-size:30/@size;
+			color:#EB4841;
+			outline: none;
+
+			&[type="button"]{
+				width:70/@size;
+				line-height:30/@size;
+				background-color:#F6AF00;
+				border-radius:10% 10%;
+				font-size:18/@size;
+				color:white;
+				margin-left:20/@size;
+
+				&:hover{
+					color: #EB4841;
+				}
+			}
+		}
+
+	}
+
+	.pic{
+		width:100%;
+		height:375/@size;
+		background:url(http://ww3.sinaimg.cn/mw690/6cccc1b7gw1f9wow2vc5wj20dw0afwga.jpg) no-repeat center;
+		background-size: 100% 100%;
+		border-radius:10% 10%;
+		text-align:left;
+
+		span{
+			display:inline-block;
+			margin:20/@size 50/@size;
+			color:#6C8F6F;
+			font:bold (50/@size)~'/'(60/@size) "Algerian",sans-serif;
+		}
+	}
+
+
+}

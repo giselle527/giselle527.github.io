@@ -1,0 +1,101 @@
+@fontsize: 18;
+@size: @fontsize*1rem;
+
+html { 
+    font-size: @fontsize * 1px;
+}
+
+body{
+    margin:0; 
+    padding:0;
+    background:white;                
+}
+#box{
+    padding:0 0 0 32.4/@size;
+    width:1000/@size;
+    height:468/@size;
+    background:url(http://wx4.sinaimg.cn/mw690/6cccc1b7ly1fddauipu3oj20fs0d7my0.jpg) no-repeat 0% 100%;
+    background-size: contain;
+    margin: 3% auto;
+    position:relative;
+
+}
+#img{
+    position:absolute;
+    left:720/@size;
+    top:-12.6/@size;
+}
+table{
+    border:3/@size solid RGB(54,53,32);
+    border-collapse: collapse;
+    text-align:center;
+    margin-top:20/@size;
+    font-family: "新宋体";
+    color:RGB(54,53,32);
+}
+caption{
+   color:RGB(118,55,20);
+   font-size:22/@size; 
+   font-weight:bold; 
+   margin-bottom:15/@size;
+   padding-right:30/@size;
+}
+#tab #inp{
+    width:100/@size;
+    padding:0 6/@size;
+    border-radius:15% 15%;
+    border:3/@size solid RGB(174,128,94);                 
+}
+th{
+    padding:0 7/@size;
+}
+td{
+    padding:0 3/@size;
+}
+input{
+   text-align:center; 
+   padding:0;
+   background:none;
+}
+#tab input[type="text"]{
+    width:50/@size;
+    color:RGB(0,66,75);
+    font-size:18/@size;
+    font-weight:bold;
+    border:none;
+}
+#tab input[type="button"]{
+    color:RGB(0,66,75);
+    font-size:0.8em;
+    width:35/@size;
+    line-height:15/@size;
+    border-radius:50% 35%;
+    margin:0 1.5/@size;
+}
+p{
+    width:294/@size;
+    height:202/@size;
+    text-align:center;
+    border-radius:50% 50%;
+    background:url(http://wx3.sinaimg.cn/mw690/6cccc1b7ly1fddaujbb04j20a708975b.jpg);
+    background-size: cover;
+    position:absolute;
+    right:90/@size;
+    bottom:-36/@size;
+    opacity:0.6;
+}
+p .sp{
+    border:none;
+    background:none;
+    width:274/@size;
+    height:115/@size;
+    resize:none;
+    display:inline-block;
+    font-family: "华文楷体";                
+    font-size:1em;
+    text-align:center;
+    position:absolute;
+    left:8/@size;
+    top:60/@size;
+    overflow: hidden;
+}

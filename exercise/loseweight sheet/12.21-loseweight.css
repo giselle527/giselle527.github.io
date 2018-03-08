@@ -1,0 +1,96 @@
+html {
+  font-size: 18px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+#box {
+  padding: 0 0 0 1.8rem;
+  width: 55.55555556rem;
+  height: 26rem;
+  background: url(http://wx4.sinaimg.cn/mw690/6cccc1b7ly1fddauipu3oj20fs0d7my0.jpg) no-repeat 0% 100%;
+  background-size: contain;
+  margin: 3% auto;
+  position: relative;
+}
+#img {
+  position: absolute;
+  left: 40rem;
+  top: -0.7rem;
+}
+table {
+  border: 0.16666667rem solid #363520;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 1.11111111rem;
+  font-family: "新宋体";
+  color: #363520;
+}
+caption {
+  color: #763714;
+  font-size: 1.22222222rem;
+  font-weight: bold;
+  margin-bottom: 0.83333333rem;
+  padding-right: 1.66666667rem;
+}
+#tab #inp {
+  width: 5.55555556rem;
+  padding: 0 0.33333333rem;
+  border-radius: 15% 15%;
+  border: 0.16666667rem solid #ae805e;
+}
+th {
+  padding: 0 0.38888889rem;
+}
+td {
+  padding: 0 0.16666667rem;
+}
+input {
+  text-align: center;
+  padding: 0;
+  background: none;
+}
+#tab input[type="text"] {
+  width: 2.77777778rem;
+  color: #00424b;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+}
+#tab input[type="button"] {
+  color: #00424b;
+  font-size: 0.8em;
+  width: 1.94444444rem;
+  line-height: 0.83333333rem;
+  border-radius: 50% 35%;
+  margin: 0 0.08333333rem;
+}
+p {
+  width: 16.33333333rem;
+  height: 11.22222222rem;
+  text-align: center;
+  border-radius: 50% 50%;
+  background: url(http://wx3.sinaimg.cn/mw690/6cccc1b7ly1fddaujbb04j20a708975b.jpg);
+  background-size: cover;
+  position: absolute;
+  right: 5rem;
+  bottom: -2rem;
+  opacity: 0.6;
+}
+p .sp {
+  border: none;
+  background: none;
+  width: 15.22222222rem;
+  height: 6.38888889rem;
+  resize: none;
+  display: inline-block;
+  font-family: "华文楷体";
+  font-size: 1em;
+  text-align: center;
+  position: absolute;
+  left: 0.44444444rem;
+  top: 3.33333333rem;
+  overflow: hidden;
+}
