@@ -31,14 +31,9 @@ html {
     font-size: 14.4px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   html {
-    font-size: 15.36px;
-  }
-}
-@media (min-width: 1024px) {
-  html {
-    font-size: 20.48px;
+    font-size: 16px;
   }
 }
 body,
@@ -54,6 +49,9 @@ input {
 ::selection {
   background: rgba(35, 80, 88, 0.7);
   color: #f7e2c2;
+}
+body {
+  overflow: hidden;
 }
 .wrap {
   width: 40rem;

@@ -60,10 +60,6 @@
     var inp_y=yesterday.getFullYear();
     inp.value=inp_y+"."+inp_m+"."+inp_d;
 
-    //获取焦点
-    document.onclick=function(ev){
-        ev.target.focus();
-    };
     //选中文本
     p_sp.onmouseover=function(ev){
         p_sp.select();

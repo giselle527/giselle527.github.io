@@ -42,16 +42,16 @@ html {
 		font-size: @scale*720px;
   	}
 }
-@media (min-width:768px){
+@media (min-width:800px){
   	html{
-		font-size: @scale*768px;
+		font-size: @scale*800px;
   	}
 }
-@media (min-width:1024px){
-  	html{
-		font-size: @scale*1024px;
-  	}
-}
+// @media (min-width:1024px){
+//   	html{
+// 		font-size: @scale*1024px;
+//   	}
+// }
 // @media (min-width:1349px){
 //   	html{
 // 		font-size: @scale*1349px;
@@ -71,6 +71,10 @@ select,input{
 ::selection{
 	background: rgba(35,80,88,0.7); 
 	color: @lpcolor;
+}
+
+body{
+	overflow: hidden;
 }
 
 .wrap{

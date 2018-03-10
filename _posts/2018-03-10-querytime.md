@@ -14,5 +14,5 @@ tags: [时差, 古风]
 
 ## 查询国际时间
 
-[点我查询国际时间]("/exercise/querytime/index.html")
+<a href="/exercise/querytime/index.html" target="_blank">点我查询国际时间</a>
 
