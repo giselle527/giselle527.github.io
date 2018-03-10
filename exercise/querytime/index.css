@@ -1,0 +1,151 @@
+html {
+  font-size: 5.4px;
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 6.4px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 7.2px;
+  }
+}
+@media (min-width: 412px) {
+  html {
+    font-size: 8.24px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 9.6px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 12.8px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 14.4px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 15.36px;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 20.48px;
+  }
+}
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+select,
+input {
+  outline: none;
+  border: none;
+}
+::selection {
+  background: rgba(35, 80, 88, 0.7);
+  color: #f7e2c2;
+}
+.wrap {
+  width: 40rem;
+  height: 22.8rem;
+  background: #eaf3da url(images/bg_01.png) no-repeat center;
+  background-size: 100% 100%;
+  border-radius: 1rem;
+  margin: 5% auto;
+  padding-top: 5.5rem;
+}
+.convert {
+  font: bold 1.5rem/1.5rem "华文楷体", sans-serif;
+  text-align: center;
+  color: #235058;
+}
+.convert input {
+  width: 3rem;
+  text-align: center;
+  border: 0.05rem solid #235058;
+  border-radius: 5px;
+  background-color: #f7e2c2;
+  margin-right: 0.2rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  color: #235058;
+}
+.convert .h {
+  margin-left: 0.5rem;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main .contl,
+.main .contr {
+  margin-top: 4rem;
+}
+.main .contl .city,
+.main .contr .city,
+.main .contl .time,
+.main .contr .time {
+  background: #eaf3da;
+  color: #235058;
+  font-family: "华文楷体";
+  font-size: 1.2rem;
+}
+.main .contl {
+  margin-left: 3rem;
+  text-align: left;
+}
+.main .contl .time {
+  text-align: left;
+}
+.main .contl .city {
+  direction: ltr;
+}
+.main .contr {
+  margin-right: 3rem;
+  text-align: right;
+}
+.main .contr .time {
+  text-align: right;
+}
+.main .contr .city {
+  direction: rtl;
+}
+.main .city {
+  margin-top: 1.5rem;
+}
+.main .city option {
+  font-size: 0.8rem;
+}
+.main .time {
+  display: block;
+  width: 15rem;
+}
+.btn {
+  display: block;
+  font-family: "华文行楷";
+  margin: 1.5rem auto;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  color: #235058;
+  font: 1.5rem/9rem "华文行楷", sans-serif;
+  background: #f7e2c2 url(images/f_02.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  text-align: right;
+}
+.btn:hover {
+  color: #f7e2c2;
+  background-color: #235058;
+}

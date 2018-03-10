@@ -1,0 +1,186 @@
+
+@fontsize: 20;
+@size: 20*1rem;
+@lgcolor: #eaf3da; //light green
+@dgcolor: #235058; //dark green
+@lpcolor: #f7e2c2; //light pink
+
+@uiwidth: 1000; //ui图宽度
+@scale: @fontsize/@uiwidth;
+@size: @fontsize*1rem;
+
+html { 
+	font-size: @scale*270px;
+}
+@media (min-width:320px){
+  	html{
+		font-size: @scale*320px;
+  	}
+}
+@media (min-width:360px){
+  	html{
+		font-size: @scale*360px;
+  	}
+}
+@media (min-width:412px){
+  	html{
+		font-size: @scale*412px;
+  	}
+}
+@media (min-width:480px){
+  	html{
+		font-size: @scale*480px;
+  	}
+}
+@media (min-width:640px){
+  	html{
+		font-size: @scale*640px;
+  	}
+}
+@media (min-width:720px){
+  	html{
+		font-size: @scale*720px;
+  	}
+}
+@media (min-width:768px){
+  	html{
+		font-size: @scale*768px;
+  	}
+}
+@media (min-width:1024px){
+  	html{
+		font-size: @scale*1024px;
+  	}
+}
+// @media (min-width:1349px){
+//   	html{
+// 		font-size: @scale*1349px;
+//   	}
+// }
+
+body, p{
+	margin: 0;
+	padding: 0;
+}
+
+select,input{
+	outline: none;
+	border: none;
+}
+
+::selection{
+	background: rgba(35,80,88,0.7); 
+	color: @lpcolor;
+}
+
+.wrap{
+	width: 800/@size;
+	height: 456/@size;
+	background: @lgcolor url(images/bg_01.png) no-repeat center;
+	background-size: 100% 100%;
+	border-radius: 1rem;
+	margin: 5% auto;
+	padding-top: 5.5rem;
+}
+
+.convert{
+	font: bold 1.5rem/1.5rem "华文楷体",sans-serif;
+	text-align: center;
+	color: @dgcolor;
+
+	input{
+		width:3rem;
+		text-align: center;
+		border: 1/@size solid @dgcolor;
+		border-radius: 5px;
+		background-color: @lpcolor;
+		margin-right: 0.2rem;
+		height: 1.2rem;
+		line-height: 1.2rem;
+		font-size: 1rem;
+		color: @dgcolor;
+	}
+
+	.h{
+		margin-left: 0.5rem;
+	}
+}
+
+.main{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	.contl, .contr{
+
+		margin-top: 80/@size;
+
+		.city,.time{
+			background: @lgcolor;
+			color: @dgcolor;
+			font-family: "华文楷体";
+			font-size: 1.2rem;
+
+		}
+	}
+
+	.contl{		
+		margin-left: 60/@size;
+		text-align: left;
+
+		.time{
+			text-align: left;
+		}
+
+		.city{
+			direction: ltr;
+		}
+	}
+	.contr{
+		margin-right: 60/@size;
+		text-align: right;
+
+		.time{
+			text-align: right;
+		}
+
+		.city{
+			direction: rtl;
+		}
+	}
+
+	.city{
+		margin-top: 30/@size;
+
+		option{
+			font-size: 0.8rem;
+		}
+
+	}
+
+	.time{
+		display: block;
+		width:15rem;
+	}
+}
+
+.btn{
+	display: block;
+	font-family: "华文行楷";
+	margin: 1.5rem auto;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	color: @dgcolor;
+	font: 1.5rem/9rem "华文行楷",sans-serif;
+	background: @lpcolor url(images/f_02.png) no-repeat 0 0;
+	background-size: 100% 100%;
+	text-align: right;
+
+	&:hover{
+		color: #f7e2c2;
+		background-color: @dgcolor;
+	}
+
+}
