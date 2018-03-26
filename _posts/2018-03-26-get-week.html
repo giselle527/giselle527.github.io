@@ -1,0 +1,60 @@
+---
+layout: post
+title: "查询当前时间是本年的第几周"
+description: 如题，利用JS计算当前时间是本年第几周。
+categories: [前端, 备份]
+tags: [周, week, js]
+---
+
+<form style="width:200px; margin:30px auto; text-align:center; font-size:14px">
+    <input type="text" id="y">
+    <label for="y">年</label>
+    <input type="text" id="m">
+    <label for="m">月</label>
+    <input type="text" id="d">
+    <label for="d">日</label>
+    <input type ="button" value="查询" style="margin-top:20px;" id="btn">
+</form>
+<div id="cont" style="text-align:center; margin-top: 30px; font-size: 25px;"></div>
+<script>
+
+        var t = new Date();
+        var td = t.getDate();
+        var tm = t.getMonth();
+        var ty = t.getFullYear();
+
+        var oY = document.getElementById("y");
+        var oM = document.getElementById("m");
+        var oD = document.getElementById("d");
+        var oBtn = document.getElementById("btn");
+        var oCont = document.getElementById("cont");
+
+        oY.value = ty;
+        oM.value = tm + 1;
+        oD.value = td;
+
+        oCont.innerHTML =  oY.value +"年"+ oM.value +"月"+ oD.value +"日"+"是"+ oY.value +"年第"+ getWeekOfYear(oY.value, oM.value-1, oD.value) + "周";
+
+        oBtn.onclick = function(){
+            oCont.innerHTML =  oY.value +"年"+ oM.value +"月"+ oD.value +"日"+"是"+ oY.value +"年第"+ getWeekOfYear(oY.value, oM.value-1, oD.value) + "周";
+        }
+
+        // 以周一为每周的第一天。
+        function getWeekOfYear(y,m,d){
+
+            var today = new Date(y,m,d,0,0,1);
+
+            var firstDay = new Date(today.getFullYear(),0, 1);
+            var dayOfWeek = firstDay.getDay(); 
+            var spendDay= 1;
+            if (dayOfWeek != 0) {
+              spendDay=7-dayOfWeek+1;
+            }
+            firstDay = new Date(today.getFullYear(),0, 1+spendDay);
+            var day =Math.ceil((today.valueOf()- firstDay.valueOf())/ 86400000);
+            var result =Math.ceil(day/7);
+
+            return result+1;
+        };
+    </script>
+</script>
