@@ -28,7 +28,7 @@ tags: [chrome, 插件, tunnello, JSONView, chrome使用技巧]
 
 ## chrome使用技巧
 
-* [下载chrome插件的网站](http://www.cnplugins.com/)
+* [下载chrome插件的网站](https://www.chromefor.com/)
 * chrome://settings/
 * chrome://history/
 * ctrl+点击链接，可以在新标签打开链接且不跳转到新标签
