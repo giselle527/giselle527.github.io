@@ -18,6 +18,15 @@ tags: [chrome, 插件, tunnello, JSONView, chrome使用技巧]
 
 不需要设置，安装即可。
 
+## chrome皮肤
+
+[chrome皮肤下载](https://www.themebeta.com/)
+
+1. 正在使用的皮肤是[Baymax](https://www.themebeta.com/chrome/theme/92740)；
+2. 理论上皮肤安装好之后会在`C:\Users\Administrator\AppData\Local\Google\Chrome\User Data\Default\Extensions`生成相应的文件夹，文件名毫无规则，可根据里面的图片找到相应的皮肤文件夹；
+3. 实际上由于我的chrome是轻便绿色版，且没有安装在c盘，因此相应的皮肤文件夹在`D:\Program Files\ChromePortable\User Data\Default\Extensions`，尝试了多次，发现找到皮肤文件夹根本没用；
+4. 正确的安装方法：直接在`chrome://extensions/`页面安装皮肤文件即可。
+
 
 ## 离线安装chrome插件
 
